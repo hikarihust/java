@@ -2,6 +2,12 @@ package ph1_basic;
 
 public class p02_variable {
 	public static void main(String[] args) {
+		final int YOUR_BIRTHDAY = 1990;
+		System.out.println(YOUR_BIRTHDAY);
+	}
+	
+	// 001 Variable
+	public static void main001() {
 		System.out.println("p02_variable");
 		// Khai bao bien
 		/*
