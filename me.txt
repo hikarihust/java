@@ -5,4 +5,5 @@ Tổng quan lập trình JAVA
     Hello word
 Biến số, hằng số và kiểu dữ liệu
     Package & Eclipe preferences
+    Variable 1
     
