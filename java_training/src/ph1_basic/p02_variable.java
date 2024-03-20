@@ -15,8 +15,18 @@ public class p02_variable {
 //		char name, city;
 		
 		// First name
-		char firstname;		// normal
-		char firstName;		// camelCase
-		char first_name;	// underscores
+//		char firstname;		// normal
+//		char firstName;		// camelCase
+//		char first_name;	// underscores
+		
+		int age		= 20;
+		int year 		= 2015;
+		char name   = 'Q';
+		System.out.println("age: " + age);
+		System.out.println("year: " + year);
+		System.out.println("name: " + name);
+		
+		age += 10;
+		System.out.println("age: " + age);
 	}
 }

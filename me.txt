@@ -6,4 +6,5 @@ Tổng quan lập trình JAVA
 Biến số, hằng số và kiểu dữ liệu
     Package & Eclipe preferences
     Variable 1
+    Variable 2
     
