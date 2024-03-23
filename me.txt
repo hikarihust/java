@@ -8,4 +8,5 @@ Biến số, hằng số và kiểu dữ liệu
     Variable 1
     Variable 2
     Constant
+    Data type
     
