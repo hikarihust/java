@@ -2,6 +2,19 @@ package ph1_basic;
 
 public class p05_loop {
 	public static void main(String[] args) {
+		int i = 2;
+		while(i <= 9){
+			System.out.println("Bảng cửu chương " + i);
+			for(int j = 1; j <= 10; j++){
+				System.out.printf("%d x %d = %d%n", i, j, i*j);
+			}
+			System.out.println();
+			i++;
+		}
+	}
+	
+	// 002 BẢNG CỬU CHƯƠNG - BASIC
+	public static void main002(String[] args) {
 		int number = 9;
 		
 		// FOR
