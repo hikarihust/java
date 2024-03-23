@@ -19,4 +19,6 @@ Thao tác với các nhóm Toán tử
     Sử dụng Math
     Ex Số lớn nhất
     Ex Số ngẫu nhiên
+Phát biểu điều kiện
+    If
     
