@@ -2,6 +2,16 @@ package ph1_basic;
 
 public class p03_operator {
 	public static void main(String[] args) {
+		int numberOne		= 255;
+		int numberTwo		= 125;
+		int numberThree		= 185;	
+
+		int maxNumber		= Math.max(Math.max(numberOne, numberTwo), numberThree);
+		System.out.println("Max: " + maxNumber);
+	}
+	
+	// 006 Hàm toán học phổ biến
+	public static void main006(String[] args) {
 		int numberOne		= 15;
 		int numberTwo		= 125;
 		double numberThree	= 123.145;	// 123 124
