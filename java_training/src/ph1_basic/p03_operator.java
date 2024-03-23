@@ -2,6 +2,30 @@ package ph1_basic;
 
 public class p03_operator {
 	public static void main(String[] args) {
+		int numberOne	= 20;
+		int numberTwo	= 10;
+		boolean result	= false;
+
+		// && true tất cả biểu thức true
+		// && false chỉ cần 1 biểu thức false
+		result	= (numberOne > numberTwo) && (numberOne >= numberTwo);
+		System.out.println("(numberOne > numberTwo) && (numberOne >= numberTwo is " + result);
+
+		// || true chỉ cần 1 biểu thức true
+		// || false tất cả biểu thức false
+//		result	= (3<2) || (5 <= 3) || (1<0);
+		result	= (numberOne > numberTwo) || (numberOne >= numberTwo);
+		
+		System.out.println("(numberOne > numberTwo) || (numberOne >= numberTwo is " + result);
+
+		// true
+//		result	= !(3>2 && 5>8);
+		result = !(numberOne > numberTwo);
+		System.out.println("!(numberOne > numberTwo) " + result);
+	}
+	
+	// 004 Toán tử so sánh > < >= <= == != 
+	public static void main004(String[] args) {
 		int numberOne		= 3;
 		int numberTwo		= 5;
 		boolean result	= false;
