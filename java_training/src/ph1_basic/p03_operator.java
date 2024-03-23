@@ -2,6 +2,26 @@ package ph1_basic;
 
 public class p03_operator {
 	public static void main(String[] args) {
+		int numberOne		= 15;
+		int numberTwo		= 125;
+		double numberThree	= 123.145;	// 123 124
+
+		int maxNumber		= Math.max(numberOne, numberTwo);
+		System.out.println("Max: " + maxNumber);
+		
+		int minNumber		= Math.min(numberOne, numberTwo);
+		System.out.println("Min: " + minNumber);
+		
+		System.out.println("ceil: " + Math.ceil(numberThree));
+		System.out.println("floor: " + Math.floor(numberThree));
+		System.out.println("round: " + Math.round(numberThree));
+		
+		double randomNumber	= Math.random();
+		System.out.println("randomNumber: " + randomNumber);
+	}
+	
+	// 005 Toán tử logic && || !
+	public static void main005(String[] args) {
 		int numberOne	= 20;
 		int numberTwo	= 10;
 		boolean result	= false;
