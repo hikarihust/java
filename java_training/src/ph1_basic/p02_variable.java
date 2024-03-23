@@ -1,7 +1,19 @@
 package ph1_basic;
 
 public class p02_variable {
+	// 004 Type casting
 	public static void main(String[] args) {
+		int var1 = 12;
+		double var2 = 1.23;
+		int var3 = var1 + (int)var2;
+		double var4 = (double) var1 + var2;
+		
+		System.out.println("var3: " + var3);
+		System.out.println("var4: " + var4);
+	}
+	
+	// 003 Data Type
+	public static void main003(String[] args) {
 		int var1	= 12;
 		byte var2	= 10;
 		boolean var3 = true;
@@ -14,7 +26,6 @@ public class p02_variable {
 		System.out.println("var4: " + var4);
 		System.out.println("name: " + name);
 	}
-	
 	// 002 Constant
 	public static void main002(String[] args) {
 		final int YOUR_BIRTHDAY = 1990;

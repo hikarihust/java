@@ -9,4 +9,5 @@ Biến số, hằng số và kiểu dữ liệu
     Variable 2
     Constant
     Data type
+    Type casting
     
