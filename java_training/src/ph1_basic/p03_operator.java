@@ -2,6 +2,31 @@ package ph1_basic;
 
 public class p03_operator {
 	public static void main(String[] args) {
+		int numberOne		= 3;
+		int numberTwo		= 5;
+		boolean result	= false;
+
+		result	= numberOne > numberTwo;
+		System.out.println(numberOne + " > " + numberTwo + " is " + result);
+
+		result	= numberOne >= numberTwo;
+		System.out.println(numberOne + " >= " + numberTwo + " is " + result);
+		
+		result	= numberOne < numberTwo;
+		System.out.println(numberOne + " < " + numberTwo + " is " + result);
+
+		result	= numberOne <= numberTwo;
+		System.out.println(numberOne + " <= " + numberTwo + " is " + result);
+		
+		result	= (numberOne == numberTwo);
+		System.out.println(numberOne + " == " + numberTwo + " is " + result);
+
+		result	= (numberOne != numberTwo);
+		System.out.println(numberOne + " != " + numberTwo + " is " + result);
+	}
+	
+	// 003 Toan tu ++ --
+	public static void main003(String[] args) {
 		/*
 		 * numberStart++ tra ve gia tri cua numberStart, sau đo tang number lan mot đon vi
 		 * numberStart-- tra ve gia tri cua numberStart, sau đo giam number xuong mot đon vi
@@ -11,7 +36,7 @@ public class p03_operator {
 		int numberStart	= 20;
 		int numberEnd	= 0;
 		
-//		numberEnd		= ++numberStart;
+		numberEnd		= ++numberStart;
 		numberEnd		= --numberStart;
 		System.out.println("Number Start = " + numberStart);
 		System.out.println("Number End   = " + numberEnd);
