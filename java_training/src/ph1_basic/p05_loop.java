@@ -1,7 +1,30 @@
 package ph1_basic;
 
 public class p05_loop {
+	// 004 BREAK CONTINUE
 	public static void main(String[] args) {
+		System.out.println("=============break=============");
+		for (int i = 1; i <= 20; i++) {
+			if (i % 7 == 0) {
+				System.out.println("OK: " + i);
+				break;
+			}
+			System.out.println(i);
+		}
+		System.out.println("=============break=============");
+		System.out.println("=============continue=============");
+		for (int i = 1; i <= 20; i++) {
+			if (i % 7 == 0) {
+				System.out.println("OK: " + i);
+				continue;
+			}
+			System.out.println(i);
+		}
+		System.out.println("=============continue=============");
+	}
+	
+	// 003 BẢNG CỬU CHƯƠNG - FULL
+	public static void main003(String[] args) {
 		int i = 2;
 		while(i <= 9){
 			System.out.println("Bảng cửu chương " + i);
