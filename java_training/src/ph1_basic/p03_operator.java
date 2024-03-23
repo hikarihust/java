@@ -2,6 +2,23 @@ package ph1_basic;
 
 public class p03_operator {
 	public static void main(String[] args) {
+		/*
+		 * numberStart++ tra ve gia tri cua numberStart, sau đo tang number lan mot đon vi
+		 * numberStart-- tra ve gia tri cua numberStart, sau đo giam number xuong mot đon vi
+		 * ++numberStart tang numberStart len mot don vi, sau đo tra ve gia tri cua numberStart
+		 * --numberStart giam numberStart xuong mot don vi, sau đo tra ve gia tri cua numberStart
+		 */
+		int numberStart	= 20;
+		int numberEnd	= 0;
+		
+//		numberEnd		= ++numberStart;
+		numberEnd		= --numberStart;
+		System.out.println("Number Start = " + numberStart);
+		System.out.println("Number End   = " + numberEnd);
+	}
+	
+	// 002 Toan tu gan += -= *= /= %=
+	public static void main002(String[] args) {
 		int number	= 20;
 		System.out.println("Start = " + number);
 		
