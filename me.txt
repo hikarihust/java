@@ -26,4 +26,5 @@ Phát biểu điều kiện
     Switch
 Vòng lặp
     Vòng lặp
+    Ex Bảng cửu chương _ Basic
     
