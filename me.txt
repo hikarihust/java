@@ -24,4 +24,6 @@ Phát biểu điều kiện
     If else
     If else if else
     Switch
+Vòng lặp
+    Vòng lặp
     
