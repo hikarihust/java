@@ -23,4 +23,5 @@ Phát biểu điều kiện
     If
     If else
     If else if else
+    Switch
     

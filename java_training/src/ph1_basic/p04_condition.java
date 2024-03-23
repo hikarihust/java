@@ -1,7 +1,35 @@
 package ph1_basic;
 
 public class p04_condition {
+	// 003 SWITCH
 	public static void main(String[] args) {
+		int number		= 1;
+		String result	= "";
+		
+		switch (number){
+			case 2:
+				result = "Thứ hai";
+				break;
+			case 3:
+				result = "Thứ ba";
+				break;
+			case 4:
+				result = "Thứ tư";
+				break;
+			case 1:
+			case 8:
+				result = "Chủ nhật";
+				break;
+			default:
+				result = "Không hợp lệ";
+				break;
+		}
+		
+		System.out.println(result);
+	}
+	
+	// 003 IF ELSE IF ELSE - Dạng 03
+	public static void main008(String[] args) {
 		int number	= 9;
 		String str1	= "dương";
 		String str2	= "chẵn";
