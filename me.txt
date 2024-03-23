@@ -18,4 +18,5 @@ Thao tác với các nhóm Toán tử
     Toán tử logic
     Sử dụng Math
     Ex Số lớn nhất
+    Ex Số ngẫu nhiên
     

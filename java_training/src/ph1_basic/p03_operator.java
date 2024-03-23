@@ -1,7 +1,19 @@
 package ph1_basic;
 
 public class p03_operator {
+	// 008 Random 1 số tự nhiên nằm trong 1 khoảng bất kỳ
 	public static void main(String[] args) {
+		int max		= 19;
+		int min		= 14;	// 14 15 16 17 18 19
+		int range	= (max - min) + 1;
+		int randomNumber = 0;
+		
+		randomNumber	= (int)(Math.random() * range) + min; 
+		System.out.println("random: " + randomNumber);
+	}
+	
+	// 007 MAX
+	public static void main007(String[] args) {
 		int numberOne		= 255;
 		int numberTwo		= 125;
 		int numberThree		= 185;	
