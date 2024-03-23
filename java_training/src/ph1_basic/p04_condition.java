@@ -2,17 +2,53 @@ package ph1_basic;
 
 public class p04_condition {
 	public static void main(String[] args) {
-		int number		= 4;
+		int number	= 9;
+		String str1	= "dương";
+		String str2	= "chẵn";
 		
-		if(number % 2 == 0){
-			System.out.println("Số chắn");
+		if(number < 0) 		str1 = "âm";
+		if(number %2 == 1) 	str2 = "lẻ";
+	
+		System.out.println("nguyên " + str1 + " " + str2);
+	}
+	
+	// 003 IF ELSE IF ELSE - Dạng 02 
+	public static void main007(String[] args) {
+		int number		= -1;
+		String result	= "";
+		
+//		n >= 0 n%2==0	=> n nguyên dương chẵn
+//		n >= 0 n%2==1	=> n nguyên dương lẻ
+//		n < 0 n%2==0	=> n nguyên âm chẵn
+//		n < 0 n%2==1	=> n nguyên âm lẻ
+		
+		if(number >= 0 && number %2 == 0){
+			result	= "nguyên dương chẵn";
+		} else if (number >= 0 && number %2 == 1){
+			result	= "nguyên dương lẻ";
+		} else if (number < 0 && number %2 == 0){
+			result	= "nguyên âm chẳn";
 		} else{
+			result	= "nguyên âm lẻ";
+		}
+		System.out.println(result);
+	}
+	
+	// 003 IF ELSE IF ELSE - Dạng 01 
+	public static void main006(String[] args) {
+		int number		= 0;
+		
+		if(number == 0) {
+			System.out.println("Số không");
+		}else if (number % 2 == 1){
 			System.out.println("Số lẻ");
+		}else{
+			System.out.println("Số chẵn");
 		}
 	}
 	
-	// 001 IF - Dạng 04
-	public static void main004(String[] args) {
+	// 002 IF ELSE
+	public static void main005(String[] args) {
 		int number		= 15;
 		String result	= "Số chắn";
 
