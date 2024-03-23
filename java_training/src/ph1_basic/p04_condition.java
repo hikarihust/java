@@ -2,6 +2,17 @@ package ph1_basic;
 
 public class p04_condition {
 	public static void main(String[] args) {
+		int number		= 4;
+		
+		if(number % 2 == 0){
+			System.out.println("Số chắn");
+		} else{
+			System.out.println("Số lẻ");
+		}
+	}
+	
+	// 001 IF - Dạng 04
+	public static void main004(String[] args) {
 		int number		= 15;
 		String result	= "Số chắn";
 
