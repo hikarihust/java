@@ -10,4 +10,6 @@ Biến số, hằng số và kiểu dữ liệu
     Constant
     Data type
     Type casting
+Thao tác với các nhóm Toán tử
+    Toán tử số học
     
