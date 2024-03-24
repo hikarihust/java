@@ -2,8 +2,28 @@ package ph1_basic;
 
 public class p08_shape {
 	
-	// 004 Shape 4
+	// 005 Shape 5
 	public static void main(String[] args) {
+		/*
+		 	1
+			1  2
+			1  2  3
+			1  2  3  4
+			1  2  3  4  5
+	 	*/
+		
+		int number = 1;
+		while(number <= 5){
+			for(int i = 1; i <= number; i++){
+				System.out.print(i + " ");
+			}
+			System.out.println();
+			number++;
+		}
+	}
+	
+	// 004 Shape 4
+	public static void main004(String[] args) {
 		/*
 		 	*  *  *  *  *
 		 	   *  *  *  *    
