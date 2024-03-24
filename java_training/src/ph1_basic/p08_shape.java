@@ -3,6 +3,31 @@ package ph1_basic;
 public class p08_shape {
 	public static void main(String[] args) {
 		/*
+				         *
+				      *  *
+				   *  *  *
+				*  *  *  *
+			 *  *  *  *  *
+		
+		 		*	1	4
+		 	   **	2	3	
+		      ***
+		     ****
+		    *****
+		*/
+		
+		int number = 1;
+		while(number <= 5){
+			for(int i = 1; i<= 5-number; i++) System.out.print("  ");
+			for(int j = 1; j<= number; j++) System.out.print("* ");
+			System.out.println();
+			number++;
+		}
+	}
+	
+	// 002 Shape 2
+	public static void main002(String[] args) {
+		/*
 		 	*  *  *  *  *	number=5
 			*  *  *  *		number=4
 			*  *  *  		number=3
