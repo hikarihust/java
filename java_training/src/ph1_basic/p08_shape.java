@@ -2,8 +2,42 @@ package ph1_basic;
 
 public class p08_shape {
 	
-	// 005 Shape 5
+	// 006 Shape 6
 	public static void main(String[] args) {
+		/*
+			1		
+		   212		2
+		  32123		23
+		 4321234	234
+		543212345	2345
+		
+	 	*/
+		String record	= "";
+		String result	= "";
+		String space	= "";
+		String left		= "";
+		String right	= "";
+		
+		int number		= 1;
+		while(number <= 9){
+			space	= "";
+			left	= "";
+			right	= "";
+			
+			for(int s = 1; s<= (9 - number) ; s++) space += " ";
+			for(int l = number; l >= 2 ; l--) left += l;
+			for(int r = 2; r <= number ; r++) right += r;
+			
+			record	= space + left + "1" + right + "\n";
+			result	+= record;
+			number++;
+		}
+		System.out.println(result);
+		
+	}
+	
+	// 005 Shape 5
+	public static void main005(String[] args) {
 		/*
 		 	1
 			1  2
