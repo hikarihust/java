@@ -48,4 +48,6 @@ Mô phỏng máy ATM bằng kỹ thuật tham ăn
 
 
 Class & Object
+Property & Method
+    Properties
     
