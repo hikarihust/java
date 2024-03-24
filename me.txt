@@ -31,4 +31,6 @@ Vòng lặp
     Break & continue
 Xây dựng ứng dụng máy tính bỏ túi
 Xây dựng ứng dụng Game “Đi tìm ẩn số”
+Sử dụng vòng lặp xử lý các tháp hình
+    Shape 01
     
