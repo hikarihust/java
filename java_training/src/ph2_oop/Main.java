@@ -9,9 +9,7 @@ public class Main {
 		studentOne.setName("John");
 		studentOne.setCode("S001");
 		
-		System.out.println("Name: " + studentOne.getName());
-		System.out.println("Code: " + studentOne.getCode());
-		System.out.println("Year: " + studentOne.getBirthday());
+		studentOne.showInfo();
 	}
 
 }

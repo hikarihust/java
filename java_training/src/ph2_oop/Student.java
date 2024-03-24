@@ -22,4 +22,12 @@ public class Student {
 	public void setBirthday(int birthday) {
 		this.birthday = birthday;
 	}
+	
+	// Show Student Info
+	public void showInfo() {
+		System.out.println("Student Info: ");
+		System.out.println("Name \t\t:" + this.getName());
+		System.out.println("Code \t\t:" + this.getCode());
+		System.out.println("Birthday \t:" + this.getBirthday());
+	}
 }
