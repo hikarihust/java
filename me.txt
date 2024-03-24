@@ -39,4 +39,5 @@ Sử dụng vòng lặp xử lý các tháp hình
     Shape 05
     Shape 06
     Shape 07
+    Shape 08
     

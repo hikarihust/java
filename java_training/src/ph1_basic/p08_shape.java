@@ -2,8 +2,39 @@ package ph1_basic;
 
 public class p08_shape {
 	
-	// 007 Shape 7
+	// 008 Shape 8
 	public static void main(String[] args) {
+		/*					
+		  HEIGHT		4
+		 			 line	= space + character
+			*			1		3		1			space 		= HEIGHT - line
+	       *** 			2		2		3			character	= 2*line - 1
+	      *****			3		1		5
+	     *******		4		0		7
+	 	*/
+
+		final int HEIGHT	= 9;
+		String result		= "";	
+		String space		= "";
+		String character	= "";
+		
+		int line = 1;
+		while(line <= HEIGHT){
+			space		= "";
+			character	= "";
+			for(int s = 1; s <= HEIGHT - line; s++) space += "  ";
+			for(int c = 1; c <= 2*line - 1; c++) character += "* ";
+			
+			result += space + character + "\n";
+			line++;
+		}
+		
+		System.out.println(result);
+	}
+	
+	
+	// 007 Shape 7
+	public static void main007(String[] args) {
 		/*
 			*  *  *  *  * 	11 12 13 14 15
 		    *           *	21 22 23 24 25
