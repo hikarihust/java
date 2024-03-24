@@ -7,6 +7,13 @@ public class Student {
 	public String code;
 	public int birthday;
 	
+	// CONSTRUCTOR
+	public Student(String name, String code, int birthday) {
+		this.name = name;
+		this.code = code;
+		this.birthday = birthday;
+	}
+	
 	public String getName() {
 		return name;
 	}

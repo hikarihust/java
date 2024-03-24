@@ -4,6 +4,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		Student studentOne	= new Student("John", "Sv009", 2000);
+		studentOne.showInfo();
+	}
+	
+	// 003 Overloading
+	/*
+	public static void main003(String[] args) {
+		
 		Student studentOne	= new Student();
 		
 		//studentOne.setCode("S001");
@@ -13,6 +21,7 @@ public class Main {
 	}
 	
 	// 002 Setter + Getter + Method
+	/*
 	public static void main002(String[] args) {
 		
 		Student studentOne	= new Student();
@@ -30,8 +39,10 @@ public class Main {
 		studentTwo.setCode("S002");
 		studentTwo.showInfo();
 	}
+	*/
 	
 	// 001 Property
+	/*
 	public static void main001(String[] args) {
 		
 		Student studentOne	= new Student();
@@ -57,5 +68,5 @@ public class Main {
 		System.out.println("- Code: " + studentTwo.code);
 		System.out.println("- Birthday: " + studentTwo.birthday);
 	}
-
+	*/
 }
