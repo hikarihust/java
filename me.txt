@@ -40,4 +40,5 @@ Sử dụng vòng lặp xử lý các tháp hình
     Shape 06
     Shape 07
     Shape 08
+Mô phỏng máy ATM bằng kỹ thuật tham ăn
     
