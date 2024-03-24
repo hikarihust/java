@@ -52,4 +52,5 @@ Property & Method
     Properties
     Getter & setter
     ShowInfo
+    GetAge
     

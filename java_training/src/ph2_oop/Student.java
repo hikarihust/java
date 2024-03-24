@@ -1,5 +1,7 @@
 package ph2_oop;
 
+import java.util.Calendar;
+
 public class Student {
 	public String name;
 	public String code;
@@ -23,11 +25,17 @@ public class Student {
 		this.birthday = birthday;
 	}
 	
+	public int getAge() {			
+		Calendar now = Calendar.getInstance();
+		return now.get(Calendar.YEAR) - this.getBirthday();
+	}
+	
 	// Show Student Info
 	public void showInfo() {
 		System.out.println("Student Info: ");
 		System.out.println("Name \t\t:" + this.getName());
 		System.out.println("Code \t\t:" + this.getCode());
 		System.out.println("Birthday \t:" + this.getBirthday());
+		System.out.println("Age \t\t:" + this.getAge());
 	}
 }
