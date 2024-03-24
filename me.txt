@@ -30,4 +30,5 @@ Vòng lặp
     Ex Bảng cửu chương _ Full
     Break & continue
 Xây dựng ứng dụng máy tính bỏ túi
+Xây dựng ứng dụng Game “Đi tìm ẩn số”
     
