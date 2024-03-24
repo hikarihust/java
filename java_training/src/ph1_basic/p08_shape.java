@@ -1,7 +1,28 @@
 package ph1_basic;
 
 public class p08_shape {
+	
+	// 004 Shape 4
 	public static void main(String[] args) {
+		/*
+		 	*  *  *  *  *
+		 	   *  *  *  *    
+		 	   	  *  *  *
+		 	   	  	 *  *
+		 	   	  	 	*
+	 	*/
+		
+		int number = 9;
+		while(number >= 1){
+			for(int i = 1; i<= 9-number; i++) System.out.print("  ");
+			for(int j = 1; j<= number; j++) System.out.print("* ");
+			System.out.println();
+			number--;
+		}
+	}
+	
+	// 003 Shape 3
+	public static void main003(String[] args) {
 		/*
 				         *
 				      *  *
