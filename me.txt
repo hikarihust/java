@@ -59,4 +59,5 @@ Constructor
     Constructor
 Inheritance
     Inheritance
+    Final class
     
