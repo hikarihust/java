@@ -1,13 +1,26 @@
 package ph2_oop;
 
 public class Main {
-
+	// 005 Inheritance 
 	public static void main(String[] args) {
+		
+		Student studentObj	= new Student();
+		studentObj.setName("Peter");
+		studentObj.showInfo();
+		
+		Teacher teacherObj	= new Teacher();
+		teacherObj.setName("Mr Peter");
+		teacherObj.showInfo();
+	}
+	
+	// 004 Constructor
+	/*
+	public static void main004(String[] args) {
 		
 		Student studentOne	= new Student("John", "Sv009", 2000);
 		studentOne.showInfo();
 	}
-	
+	*/
 	// 003 Overloading
 	/*
 	public static void main003(String[] args) {
