@@ -1,8 +1,22 @@
 package ph2_oop;
 
 public class Main {
-	// 005 Inheritance 
+
+	// 006 Overriding  
 	public static void main(String[] args) {
+
+			Student studentObj	= new Student("Peter", "SV001", 1997);
+//			studentObj.setName("Peter");
+//			studentObj.setCode("SV001");
+//			studentObj.setBirthday(1997);
+			studentObj.setScore(8.5);
+			
+			studentObj.showInfo();
+	}
+	
+	// 005 Inheritance 
+	/*
+	public static void main005(String[] args) {
 		
 		Student studentObj	= new Student();
 		studentObj.setName("Peter");
@@ -12,6 +26,7 @@ public class Main {
 		teacherObj.setName("Mr Peter");
 		teacherObj.showInfo();
 	}
+	*/
 	
 	// 004 Constructor
 	/*

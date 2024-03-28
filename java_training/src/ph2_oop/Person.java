@@ -7,12 +7,12 @@ public class Person {
 	public String code;
 	public int birthday;
 	
-//	// CONSTRUCTOR
-//	public Person(String name, String code, int birthday) {
-//		this.name = name;
-//		this.code = code;
-//		this.birthday = birthday;
-//	}
+	// CONSTRUCTOR
+	public Person(String name, String code, int birthday) {
+		this.name = name;
+		this.code = code;
+		this.birthday = birthday;
+	}
 	
 	public String getName() {
 		return name;
@@ -57,7 +57,7 @@ public class Person {
 	
 	// Show Student Info
 	public void showInfo() {
-		System.out.println("Info: ");
+		System.out.println("Person Info: ");
 		System.out.println("Name \t\t:" + this.getName());
 		System.out.println("Code \t\t:" + this.getCode());
 		System.out.println("Birthday \t:" + this.getBirthday());
