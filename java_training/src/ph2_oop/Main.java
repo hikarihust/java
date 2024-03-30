@@ -2,8 +2,17 @@ package ph2_oop;
 
 public class Main {
 
-	// 006 Overriding  
+	// 007 Access modifier 
 	public static void main(String[] args) {
+
+		Person personObj	= new Person("Peter", "SV001", 1997);
+		personObj.name      = "Abcd"; 
+		personObj.showInfo();
+	}
+	
+	// 006 Overriding  
+	/*
+	public static void main006(String[] args) {
 
 			Student studentObj	= new Student("Peter", "SV001", 1997);
 //			studentObj.setName("Peter");
@@ -13,6 +22,7 @@ public class Main {
 			
 			studentObj.showInfo();
 	}
+	*/
 	
 	// 005 Inheritance 
 	/*

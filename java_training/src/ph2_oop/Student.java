@@ -18,6 +18,7 @@ public class Student extends Person {
 	}
 	public void showInfo(){
 		super.showInfo();
+		super.name = "Abc";
 		System.out.println("Score \t\t:" + this.getScore());
 	}
 }
