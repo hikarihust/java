@@ -38,7 +38,7 @@ public class Fraction {
 	}
 		
 	// Tìm UCLN
-	public int UCLN(int x, int y){
+	private int UCLN(int x, int y){
 		int ucln = Math.min(x, y);
 		while (ucln >= 1) {
 			if (x%ucln == 0 && y%ucln==0) return ucln;
@@ -49,6 +49,7 @@ public class Fraction {
 	
 	// Kiểm tra phân số tối giản (UCLN của tử số và mẫu số = 1)
 	public boolean checkNormalize(){
+		if (this.UCLN(this.getNumerator() ,this.getDenominator()) == 1) return true;
 		return false;
 	}
 	
