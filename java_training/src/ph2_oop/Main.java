@@ -12,7 +12,9 @@ public class Main {
 		Fraction fractionA	= new Fraction(2, 4);	// 2/4
 		Fraction fractionB	= new Fraction(3, 9);	// 3/9
 		
-//		System.out.println(fractionA.UCLN(2, 9));
+		System.out.println(fractionA.print());
+		fractionA.normalize();
+		System.out.println(fractionA.print());
 		if (fractionB.checkNormalize() == true) System.out.println(fractionB.print() + " O dang toi gian");
 		else System.out.println(fractionB.print() + " Khong o dang toi gian");
 	}

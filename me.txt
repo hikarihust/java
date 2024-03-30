@@ -67,4 +67,5 @@ Xây dựng Class Fraction
     Print
     UCLN
     CheckNormalize
+    Normalize
     

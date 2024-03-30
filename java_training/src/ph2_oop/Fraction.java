@@ -55,6 +55,11 @@ public class Fraction {
 	
 	// Tối giản phân số
 	public void normalize(){
+		int ucln	= this.UCLN(this.getNumerator(), this.getDenominator());
+		if(ucln > 1){
+			this.setNumerator(this.getNumerator() / ucln);
+			this.setDenominator(this.getDenominator() / ucln);
+		}
 	}
 
 	public int getNumerator() {
