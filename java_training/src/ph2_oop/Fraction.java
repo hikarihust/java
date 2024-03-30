@@ -38,8 +38,13 @@ public class Fraction {
 	}
 		
 	// Tìm UCLN
-	private int UCLN(int x, int y){
-		return 0;
+	public int UCLN(int x, int y){
+		int ucln = Math.min(x, y);
+		while (ucln >= 1) {
+			if (x%ucln == 0 && y%ucln==0) return ucln;
+			ucln--;
+		}
+		return ucln;
 	}
 	
 	// Kiểm tra phân số tối giản (UCLN của tử số và mẫu số = 1)

@@ -65,4 +65,5 @@ Access modifier
 Static
 Xây dựng Class Fraction 
     Print
+    UCLN
     
