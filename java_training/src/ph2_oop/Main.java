@@ -2,13 +2,33 @@ package ph2_oop;
 
 public class Main {
 
-	// 007 Access modifier 
+	// Static
 	public static void main(String[] args) {
+
+		Counter counterObj1	= new Counter();	// object instance
+		Counter counterObj2	= new Counter();
+		Counter counterObj3	= new Counter();
+
+		counterObj1.showCount();
+		System.out.println("-----------------");
+		counterObj2.showCount();
+		System.out.println("-----------------");
+		counterObj3.showCount();
+		System.out.println("-----------------");
+		System.out.println(Counter.count);
+		System.out.println("-----------------");
+		Counter.showCount();
+	}
+	
+	// 007 Access modifier 
+	/*
+	public static void main007(String[] args) {
 
 		Person personObj	= new Person("Peter", "SV001", 1997);
 		personObj.name      = "Abcd"; 
 		personObj.showInfo();
 	}
+	*/
 	
 	// 006 Overriding  
 	/*
