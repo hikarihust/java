@@ -2,8 +2,22 @@ package ph2_oop;
 
 public class Main {
 
-	// Static
+	// 009 Fraction  
+	// Khởi tạo phân số
+	// Nhập phân số
+	// In phân số
 	public static void main(String[] args) {
+
+		Fraction fractionA	= new Fraction(2, 4);
+		Fraction fractionB	= new Fraction(3, 9);
+		
+		System.out.println(fractionA.print());
+		System.out.println(fractionB.print());
+	}
+	
+	// 008 Static
+	/*
+	public static void main08(String[] args) {
 
 		Counter counterObj1	= new Counter();	// object instance
 		Counter counterObj2	= new Counter();
@@ -19,6 +33,7 @@ public class Main {
 		System.out.println("-----------------");
 		Counter.showCount();
 	}
+	*/
 	
 	// 007 Access modifier 
 	/*

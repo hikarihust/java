@@ -63,4 +63,6 @@ Inheritance
 Overriding method
 Access modifier
 Static
+Xây dựng Class Fraction 
+    Print
     
