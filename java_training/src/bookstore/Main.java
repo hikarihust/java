@@ -43,7 +43,22 @@ public class Main {
 	}
 	
 	public static void addBook(){
-		myPrint("addBook");
+		Scanner sc			= new Scanner(System.in);
+		String bookName		= "";
+		String bookID		= "";
+		double bookPrice	= 0;
+		
+		myPrint("ID: ");
+		bookID	= sc.nextLine();
+		
+		myPrint("Name: ");
+		bookName	= sc.nextLine();
+		
+		myPrint("Price: ");
+		bookPrice	= sc.nextDouble();
+		
+		Book bookObj	= new Book(bookID, bookName, bookPrice);
+		bookObj.showInfo();
 	}
 	
 	public static void editBook(){
