@@ -72,4 +72,5 @@ Xây dựng Class Fraction
 Xây dựng ứng dụng BookStoreV1
     Main
     Add
+    Info & Edit
     
