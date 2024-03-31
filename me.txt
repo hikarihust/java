@@ -73,4 +73,8 @@ Xây dựng ứng dụng BookStoreV1
     Main
     Add
     Info & Edit
+
+======================================= Kỹ thuật xử lý mảng =======================================
+
+Khai báo mảng và truy cập mảng
     
