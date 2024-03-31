@@ -77,4 +77,6 @@ Xây dựng ứng dụng BookStoreV1
 ======================================= Kỹ thuật xử lý mảng =======================================
 
 Khai báo mảng và truy cập mảng
+Thao tác trên mảng một chiều
+    Element & Print
     
