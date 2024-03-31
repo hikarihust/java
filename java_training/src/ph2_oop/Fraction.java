@@ -10,6 +10,29 @@ public class Fraction {
 	}
 	
 	public Fraction(Fraction fractionA, Fraction fractionB, String operator){
+		fractionA.normalize();
+		fractionB.normalize();
+		
+		switch (operator) {
+			case "+":
+				this.add(fractionA, fractionB);
+				break;
+			case "-":
+				this.sub(fractionA, fractionB);
+				break;
+			case "*":
+			case "x":
+			case "X":
+			case ".":
+				this.multiply(fractionA, fractionB);
+				break;
+			case "/":
+			case ":":
+				this.divide(fractionA, fractionB);
+			default:
+				this.add(fractionA, fractionB);
+				break;
+		}
 	}
 	
 	// Tạo phần hiển thị cho phân số
@@ -20,6 +43,9 @@ public class Fraction {
 	
 	// Tổng 2 phân số x/y + a/b = (x*b + a*y)/(y*b)
 	private void add(Fraction fractionA, Fraction fractionB){
+		this.setNumerator(fractionA.getNumerator() * fractionB.getDenominator() + fractionA.getDenominator() * fractionB.getNumerator());
+		this.setDenominator(fractionA.getDenominator() * fractionB.getDenominator());
+		this.normalize();
 	}
 	
 	// Hiệu 2 phân số x/y - a/b = (x*b - a*y)/(y*b)

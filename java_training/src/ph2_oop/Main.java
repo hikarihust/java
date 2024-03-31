@@ -2,12 +2,22 @@ package ph2_oop;
 
 public class Main {
 
+	// Tổng hai phân số 
+	public static void main(String[] args) {
+
+		Fraction fractionA = new Fraction(1, 4);
+		Fraction fractionB = new Fraction(2, 4);
+		
+		Fraction fractionC = new Fraction(fractionA, fractionB, "+");
+		System.out.printf("%s + %s = %s", fractionA.print(), fractionB.print(), fractionC.print());
+	}
+	
 	// 010 Fraction  
 	// UCLN của 2 số a và b là giá trị lớn nhất mà cả 2 số a và b đều chia hết cho nó
 	// Kiểm tra phân số tối giản khi UCLN của tử số và mẫu số = 1
 	// Tối giản phân số
 	// 3/9	1/3		UCLN = 3
-	public static void main(String[] args) {
+	public static void main010(String[] args) {
 
 		Fraction fractionA	= new Fraction(2, 4);	// 2/4
 		Fraction fractionB	= new Fraction(3, 9);	// 3/9
