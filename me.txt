@@ -79,4 +79,5 @@ Xây dựng ứng dụng BookStoreV1
 Khai báo mảng và truy cập mảng
 Thao tác trên mảng một chiều
     Element & Print
+    Nhập mảng
     

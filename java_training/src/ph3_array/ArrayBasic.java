@@ -1,9 +1,34 @@
 package ph3_array;
 
+import java.util.Scanner;
+
 public class ArrayBasic {
 
 	public static void main(String[] args) {
-		study002();
+		study003();
+	}
+	
+	// 003 Nhập mảng
+	public static void study003(){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Length: ");
+		int length	= sc.nextInt();
+		sc.nextLine();
+		
+		int[] arrNumber	= new int[length];
+		
+		for(int i = 0; i < length; i++){
+			System.out.printf("Phần tử thứ %d: %n", i);
+			arrNumber[i]	= sc.nextInt();
+			sc.nextLine();
+		}
+		sc.close();
+		
+		
+		for(int i = 0; i < length; i++){
+			System.out.printf("Phần tử thứ %d: %d %n", i, arrNumber[i]);
+		}
 	}
 	
 	// 002 Truy cập phần tử và in mảng
