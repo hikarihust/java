@@ -80,4 +80,5 @@ Khai báo mảng và truy cập mảng
 Thao tác trên mảng một chiều
     Element & Print
     Nhập mảng
+    Sum, min, max
     

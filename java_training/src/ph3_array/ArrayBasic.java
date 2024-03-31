@@ -5,7 +5,29 @@ import java.util.Scanner;
 public class ArrayBasic {
 
 	public static void main(String[] args) {
-		study003();
+		study004();
+	}
+	
+	// 04 Sum - Min - Max
+	public static void study004(){
+		int[] arrInt	= {1, 2, 4, 8, 0};
+		
+		// sum = 0 + 1 + 2 + 4 + 8
+		// min = 1; min = 0
+		// max = 1; max < 8
+		
+		int sum	= 0;
+		int min	= arrInt[0];
+		int max	= arrInt[0];
+		for(int number : arrInt){
+			sum = sum + number;
+			if(min > number)	min = number;
+			if(max < number)	max = number;
+		}
+		
+		System.out.println("sum: " + sum);
+		System.out.println("min: " + min);
+		System.out.println("max: " + max);
 	}
 	
 	// 003 Nhập mảng
