@@ -5,7 +5,27 @@ import java.util.Arrays;
 public class ArrayClass {
 
 	public static void main(String[] args) {
-		study003();
+		study004();
+	}
+	
+	// 004 Sort
+	public static void study004(){
+		int arrInt[] = { 30, 31, 24, 36, 34, 27, 28 };
+		System.out.println("Input: " + Arrays.toString(arrInt));
+		
+		// Tăng dần
+		Arrays.sort(arrInt);
+		System.out.println("Output: " + Arrays.toString(arrInt));
+		
+		// Giảm dần 
+		int length	= arrInt.length;
+		for(int i = 0; i < length/2; i++){
+			int elmTmp	= arrInt[i];
+			arrInt[i]	= arrInt[length - 1 - i];
+			arrInt[length - 1 - i]	= elmTmp;
+		}
+		System.out.println("Output: " + Arrays.toString(arrInt));
+		
 	}
 	
 	// 003 In mảng
