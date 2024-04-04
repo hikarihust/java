@@ -5,7 +5,27 @@ import java.util.Arrays;
 public class ArrayClass {
 
 	public static void main(String[] args) {
-		study002();
+		study003();
+	}
+	
+	// 003 In mảng
+	public static void study003(){
+		String arrString[] 	= { "Zend 2", "PHP", "Java", "Javascript" };
+		
+		System.out.println("----------------------");
+		int length	= arrString.length;
+		for(int i = 0; i < length; i++){
+			System.out.printf("Phần tử thứ %d: %s %n", i, arrString[i]);
+		}
+		
+		System.out.println("----------------------");
+		for(String str : arrString){
+			System.out.println(str);
+		}
+		
+		System.out.println("----------------------");
+		System.out.println(Arrays.toString(arrString));
+		
 	}
 	
 	// 002 Sao chép mảng - copyOfRange
