@@ -87,4 +87,5 @@ Sử dụng Class Arrays
     sort
 Mảng đa chiều và các thao tác trên mảng
     Array multi
+    Element & Print
     
