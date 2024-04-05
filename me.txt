@@ -85,4 +85,6 @@ Sử dụng Class Arrays
     CopyOf
     ToString
     sort
+Mảng đa chiều và các thao tác trên mảng
+    Array multi
     
