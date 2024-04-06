@@ -1,10 +1,41 @@
 package ph3_array;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayMulti {
 	public static void main(String[] args) {
-		study002();
+		study003();
+	}
+	
+	// Nhập mảng đa chiều
+	public static void study003(){
+		int rows, columns;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Rows: ");
+		rows	= sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("Columns: ");
+		columns	= sc.nextInt();
+		sc.nextLine();
+		
+		int[][] arrMulti = new int[rows][columns] ;
+		for(int i = 0; i < rows; i++){
+			for(int j = 0; j < columns; j++){
+				System.out.printf("Dòng %d cột %d: %n", i+1, j+1);
+				arrMulti[i][j]	= sc.nextInt();
+				sc.nextLine();
+			}
+		}
+		sc.close();
+		
+		// 2 5 7 3
+		// 4 1 2 2
+		// 6 7 1 1
+		System.out.println(Arrays.deepToString(arrMulti));
+		
 	}
 	
 	// Truy cập và in mảng đa chiều
