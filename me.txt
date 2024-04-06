@@ -96,4 +96,5 @@ Mảng đa chiều và các thao tác trên mảng
 Xây dựng ứng dụng BookStoreV2
     Introduce & Analytict
     Add & List
+    Check Full & Check Empty
     

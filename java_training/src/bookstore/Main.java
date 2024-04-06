@@ -43,23 +43,28 @@ public class Main {
 	}
 	
 	public static void addBook(){
-		Scanner sc = new Scanner(System.in);
-		
-		String bookName	= "";
-		String bookID	= "";
-		double bookPrice= 0;
-		
-		myPrint("ID: ");
-		bookID		= sc.nextLine();
-		
-		myPrint("Name: ");
-		bookName	= sc.nextLine();
-		
-		myPrint("Price: ");
-		bookPrice	= sc.nextDouble();
-		
-		Book bookObj	= new Book(bookID, bookName, bookPrice);
-		storeObj.add(bookObj);
+		if(storeObj.checkFull() == false) {
+			Scanner sc = new Scanner(System.in);
+			
+			String bookName	= "";
+			String bookID	= "";
+			double bookPrice= 0;
+			
+			myPrint("ID: ");
+			bookID		= sc.nextLine();
+			
+			myPrint("Name: ");
+			bookName	= sc.nextLine();
+			
+			myPrint("Price: ");
+			bookPrice	= sc.nextDouble();
+			
+			
+			Book bookObj	= new Book(bookID, bookName, bookPrice);
+			storeObj.add(bookObj);
+		} else {
+			System.out.println("Store is full!");
+		}
 	}
 	
 	public static void myPrint(String content){
