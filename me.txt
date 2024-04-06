@@ -91,4 +91,5 @@ Mảng đa chiều và các thao tác trên mảng
     Matrix
     Tổng dòng
     Tổng cột
+    Tổng đường chéo
     

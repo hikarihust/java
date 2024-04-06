@@ -5,7 +5,23 @@ import java.util.Scanner;
 
 public class ArrayMulti {
 	public static void main(String[] args) {
-		study005();
+		study006();
+	}
+	
+	// Tính tổng các phần tử trên đường chéo của ma trận vuông
+	public static void study006(){
+		// 3 7 3	00 01 02
+		// 2 5 6	10 11 12
+		// 0 8 9	20 21 22
+
+		int[][] arrMulti 	= {{3, 7, 3}, {2, 5, 6}, {0, 8, 9}};
+		int sum		= 0;
+		
+		int length	= arrMulti.length;
+		for(int i = 0; i < length; i++){
+			sum += arrMulti[i][i];
+		}
+		System.out.println(sum);
 	}
 	
 	// Tính tổng các phần tử trên cùng một cột
