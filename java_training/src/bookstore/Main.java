@@ -3,88 +3,65 @@ package bookstore;
 import java.util.Scanner;
 
 public class Main {
-	private static Book bookObj = null;
-
+	
 	public static void main(String[] args) {
-		Scanner sc 		= new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int functionID	= 0;
 		boolean flag	= true;
 		
-		do{
+		do {
 			showMenu();
 			functionID		= sc.nextInt();
 			sc.nextLine();
 			
 			switch (functionID) {
-				case 1: addBook(); break;
-				case 2: editBook(); break;
-				case 3: infoBook(); break;
-				case 4:
+				case 1: addBook(); 		break;
+				case 2: editBook(); 	break;
+				case 3: deleteBook(); 	break;
+				case 4: findBook(); 	break;
+				case 5: listBook(); 	break;
+				case 6: 
 				default:
 					flag = false;
 					break;
 			}
-		} while(flag == true);
+		} while (flag == true);
 		
 		sc.close();
 	}
 	
 	public static void showMenu(){
-		
-		myPrint("===================== BOOK MANAGER =====================");
+		myPrint("----------- BOOK MANAGER ----------- ");
 		myPrint("1. Add book");
 		myPrint("2. Edit book");
-		myPrint("3. Info book");
-		myPrint("4. Exit");
-		myPrint("Your choise [1-4]: ");
+		myPrint("3. Delete book");
+		myPrint("4. Find book");
+		myPrint("5. List book");
+		myPrint("6. Exit");
+		myPrint("Your choise [1-6]: ");
+	}
+	
+	public static void addBook(){
+		myPrint("addBook");
 	}
 	
 	public static void myPrint(String content){
 		System.out.println(content);
 	}
 	
-	public static void addBook(){
-		Scanner sc			= new Scanner(System.in);
-		String bookName		= "";
-		String bookID		= "";
-		double bookPrice	= 0;
-		
-		myPrint("ID: ");
-		bookID	= sc.nextLine();
-		
-		myPrint("Name: ");
-		bookName	= sc.nextLine();
-		
-		myPrint("Price: ");
-		bookPrice	= sc.nextDouble();
-		
-		bookObj	= new Book(bookID, bookName, bookPrice);
+	public static void deleteBook(){
+		myPrint("deleteBook");
+	}
+	
+	public static void findBook(){
+		myPrint("findBook");
 	}
 	
 	public static void editBook(){
-		if(bookObj != null) {
-			Scanner sc			= new Scanner(System.in);
-			String bookName		= "";
-			double bookPrice	= 0;
-			
-			myPrint("Name: ");
-			bookName	= sc.nextLine();
-			
-			myPrint("Price: ");
-			bookPrice	= sc.nextDouble();
-			
-			bookObj.setName(bookName);
-			bookObj.setPrice(bookPrice);
-		}else{
-			myPrint("Book is not exist!");
-		}
+		myPrint("editBook");
 	}
 	
-	public static void infoBook(){
-		if (bookObj != null) {
-			bookObj.showInfo();
-		} else {
-			System.out.println("Book is not exist!");
-		}
+	public static void listBook(){
+		myPrint("listBook");
 	}
 }

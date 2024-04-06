@@ -93,4 +93,6 @@ Mảng đa chiều và các thao tác trên mảng
     Tổng cột
     Tổng đường chéo
     Max
+Xây dựng ứng dụng BookStoreV2
+    Introduce & Analytict
     
