@@ -3,6 +3,7 @@ package bookstore;
 import java.util.Scanner;
 
 public class Main {
+	private static Store storeObj	= new Store();
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -42,7 +43,23 @@ public class Main {
 	}
 	
 	public static void addBook(){
-		myPrint("addBook");
+		Scanner sc = new Scanner(System.in);
+		
+		String bookName	= "";
+		String bookID	= "";
+		double bookPrice= 0;
+		
+		myPrint("ID: ");
+		bookID		= sc.nextLine();
+		
+		myPrint("Name: ");
+		bookName	= sc.nextLine();
+		
+		myPrint("Price: ");
+		bookPrice	= sc.nextDouble();
+		
+		Book bookObj	= new Book(bookID, bookName, bookPrice);
+		storeObj.add(bookObj);
 	}
 	
 	public static void myPrint(String content){
@@ -62,6 +79,6 @@ public class Main {
 	}
 	
 	public static void listBook(){
-		myPrint("listBook");
+		storeObj.list();
 	}
 }

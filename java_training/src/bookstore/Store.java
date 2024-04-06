@@ -20,6 +20,9 @@ public class Store {
 	
 	// Add book
 	public void add(Book bookObj){
+		this.listItems[totalItems] = bookObj;
+		this.totalItems++;
+		System.out.println("Add Successfull!");
 	}
 	
 	// Edit book
@@ -36,5 +39,8 @@ public class Store {
 	
 	// list book
 	public void list(){
+		for(int i = 0; i < totalItems; i++){
+			this.listItems[i].showInfo();
+		}
 	}
 }

@@ -95,4 +95,5 @@ Mảng đa chiều và các thao tác trên mảng
     Max
 Xây dựng ứng dụng BookStoreV2
     Introduce & Analytict
+    Add & List
     
