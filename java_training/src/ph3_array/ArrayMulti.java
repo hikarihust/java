@@ -5,7 +5,25 @@ import java.util.Scanner;
 
 public class ArrayMulti {
 	public static void main(String[] args) {
-		study003();
+		study004();
+	}
+	
+	// Tính tổng các phần tử trên cùng một dòng
+	public static void study004(){
+		// 1 2 3 1
+		// 4 5 6 4
+		// 7 8 9 7
+
+		int[][] arrMulti 	= {{1, 2, 3, 1}, {4, 5, 6, 4}, {7, 8, 9, 7}};
+		int sum		= 0;
+		int row		= 3;	// arrMulti[row-1]
+		
+		for(int number : arrMulti[row-1]){
+			sum += number;
+		}
+		
+		System.out.println(Arrays.toString(arrMulti[row-1]));
+		System.out.println(sum);
 	}
 	
 	// Nhập mảng đa chiều
