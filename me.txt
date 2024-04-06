@@ -92,4 +92,5 @@ Mảng đa chiều và các thao tác trên mảng
     Tổng dòng
     Tổng cột
     Tổng đường chéo
+    Max
     

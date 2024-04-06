@@ -5,7 +5,37 @@ import java.util.Scanner;
 
 public class ArrayMulti {
 	public static void main(String[] args) {
-		study006();
+		study007();
+	}
+	
+	// Tìm phần tử lớn nhất trong ma trận
+	public static void study007(){
+		// 1  7 3
+		// 2  1 6
+		// 12 8 9
+		
+		
+		int[][] arrMulti = { { 1, 37, 3 }, { 2,21, 6 }, { 12, 8, 9 } };
+		
+		
+		int row	= arrMulti.length;
+		int max = arrMulti[0][0];
+		
+		// Cách 1
+		for(int i = 0; i < row; i++){
+			for(int j = 0; j < arrMulti[i].length; j++){
+				if(max < arrMulti[i][j])	max =  arrMulti[i][j];
+			}
+		}
+		
+		// Cách 2
+		for(int i = 0; i < row; i++){
+			Arrays.sort(arrMulti[i]);
+			int length	= arrMulti[i].length;
+			if(max < arrMulti[i][length-1])	max =  arrMulti[i][length-1];
+		}
+		System.out.println("Max:" + max);
+		
 	}
 	
 	// Tính tổng các phần tử trên đường chéo của ma trận vuông
