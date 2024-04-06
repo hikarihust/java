@@ -90,4 +90,5 @@ Mảng đa chiều và các thao tác trên mảng
     Element & Print
     Matrix
     Tổng dòng
+    Tổng cột
     

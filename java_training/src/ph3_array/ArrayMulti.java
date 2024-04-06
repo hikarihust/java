@@ -5,7 +5,24 @@ import java.util.Scanner;
 
 public class ArrayMulti {
 	public static void main(String[] args) {
-		study004();
+		study005();
+	}
+	
+	// Tính tổng các phần tử trên cùng một cột
+	public static void study005(){
+		// 1 2 3 1
+		// 4 5 6 4
+		// 7 8 9 7
+
+		int[][] arrMulti 	= {{1, 2, 3, 1}, {4, 5, 6, 4}, {7, 8, 9, 7}};
+		int sum		= 0;
+		int column	= 2;
+		int length	= arrMulti.length;
+		for(int i = 0; i < length; i++){
+			System.out.println(arrMulti[i][column - 1]);
+			sum += arrMulti[i][column - 1];
+		}
+		System.out.println(sum);
 	}
 	
 	// Tính tổng các phần tử trên cùng một dòng
