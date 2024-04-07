@@ -2,7 +2,28 @@ package ph4_exception;
 
 public class Main {
 	public static void main(String[] args) {
-		study002();
+		study003();
+	}
+	
+	// Try catch 
+	public static void study003() {
+		int number1 = 5;
+		int number2 = 1;
+		int[] arrInt	= {1, 2, 3};
+		System.out.println("Nhận thẻ ATM");
+		
+		try {
+			System.out.println(number1/number2);
+			System.out.println(arrInt[3]);
+		}  catch (ArithmeticException e) {
+			System.out.println("Error: " + e.getMessage());
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+			e.printStackTrace();
+		}
+		
+		System.out.println("Trả thẻ ATM");
 	}
 	
 	// Ví dụ truy cập phần tử không tồn tại trong mảng

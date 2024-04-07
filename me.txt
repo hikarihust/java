@@ -104,4 +104,6 @@ Xây dựng ứng dụng BookStoreV2
 ======================================= Xử lý ngoại lệ =======================================
 
 Tìm hiểu Exception và phát sinh Exception
+Sử dụng Try catch finally
+    Try catch
     
