@@ -2,7 +2,7 @@ package bookstore;
 
 public class Store {
 	private static int totalItems		= 0;		// Số quyển sách hiện tại trong kho sách
-	private final int MAX_ITEMS			= 1;		// Số quyển sách lớn nhất mà kho sách chứa được
+	private final int MAX_ITEMS			= 10;		// Số quyển sách lớn nhất mà kho sách chứa được
 	private Book[] listItems			= null;
 	
 	public Store(){
@@ -10,6 +10,11 @@ public class Store {
 	}
 	
 	public int getItemPosition(String bookID){
+		if (totalItems > 0) {
+			for(int i = 0; i < totalItems; i++){
+				if(bookID.equals(listItems[i].getID())==true) return i;
+			}
+		}
 		return -1;
 	}
 	
@@ -46,6 +51,15 @@ public class Store {
 	
 	// Find book
 	public void find(String bookID){
+		// listItems[bookPosition]	= [1 Java 		20]
+		// listItems[bookPosition]	= [2 Android	30]
+		// listItems[bookPosition]	= [3 PHP		10]
+		int bookPosition	= this.getItemPosition(bookID);
+		if(bookPosition == -1){
+			System.out.println("This book is not exist!");
+		}else{
+			listItems[bookPosition].showInfo();
+		}
 	}
 	
 	// list book

@@ -76,7 +76,14 @@ public class Main {
 	}
 	
 	public static void findBook(){
-		myPrint("findBook");
+		Scanner sc = new Scanner(System.in);
+		
+		String bookID	= "";
+		
+		myPrint("ID muon tim kiem: ");
+		bookID		= sc.nextLine();
+		
+		storeObj.find(bookID);
 	}
 	
 	public static void editBook(){
