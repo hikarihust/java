@@ -43,6 +43,14 @@ public class Store {
 	
 	// Edit book
 	public void edit(String bookID, String bookName, double bookPrice){
+		int bookPosition	= this.getItemPosition(bookID);
+		if(bookPosition == -1){
+			System.out.println("This book is not exist!");
+		}else{
+			listItems[bookPosition].setName(bookName);
+			listItems[bookPosition].setPrice(bookPrice);
+			System.out.println("Edit successfull!");
+		}
 	}
 	
 	// Delete book

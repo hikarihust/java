@@ -87,7 +87,22 @@ public class Main {
 	}
 	
 	public static void editBook(){
-		myPrint("editBook");
+		Scanner sc = new Scanner(System.in);
+		
+		String bookName	= "";
+		String bookID	= "";
+		double bookPrice= 0;
+		
+		myPrint("ID: ");
+		bookID		= sc.nextLine();
+		
+		myPrint("Name: ");
+		bookName	= sc.nextLine();
+		
+		myPrint("Price: ");
+		bookPrice	= sc.nextDouble();
+		
+		storeObj.edit(bookID, bookName, bookPrice);
 	}
 	
 	public static void listBook(){
