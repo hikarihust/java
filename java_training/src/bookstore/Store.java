@@ -32,12 +32,17 @@ public class Store {
 	
 	// Add book
 	public void add(Book bookObj){
-		if(this.checkFull() == false){
-			this.listItems[totalItems] = bookObj;
-			totalItems++;
-			System.out.println("Add successfull!");
-		}else{
-			System.out.println("Store is full!");
+		int bookPosition	= this.getItemPosition(bookObj.getID());
+		if(bookPosition == -1) {
+			if(this.checkFull() == false){
+				this.listItems[totalItems] = bookObj;
+				totalItems++;
+				System.out.println("Add successfull!");
+			}else{
+				System.out.println("Store is full!");
+			}
+		} else {
+			System.out.println("Id cua sach da ton tai");
 		}
 	}
 	
@@ -55,6 +60,16 @@ public class Store {
 	
 	// Delete book
 	public void delete(String bookID){
+		int bookPosition	= this.getItemPosition(bookID);
+		if(bookPosition == -1){
+			System.out.println("This book is not exist!");
+		}else{
+			for(int i = bookPosition; i < totalItems - 1; i++){
+				listItems[i] = listItems[i+1];
+			}
+			this.totalItems--;
+			System.out.println("Delete successfull!");
+		}
 	}
 	
 	// Find book

@@ -72,7 +72,14 @@ public class Main {
 	}
 	
 	public static void deleteBook(){
-		myPrint("deleteBook");
+		Scanner sc = new Scanner(System.in);
+		
+		String bookID	= "";
+		
+		myPrint("ID cua quyen sach muon xoa: ");
+		bookID		= sc.nextLine();
+		
+		storeObj.delete(bookID);
 	}
 	
 	public static void findBook(){
