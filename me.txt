@@ -100,4 +100,8 @@ Xây dựng ứng dụng BookStoreV2
     Find
     Edit
     Delete
+
+======================================= Xử lý ngoại lệ =======================================
+
+Tìm hiểu Exception và phát sinh Exception
     
