@@ -5,7 +5,39 @@ import java.io.FileOutputStream;
 
 public class Main {
 	public static void main(String[] args) {
-		study004();
+		study005();
+	}
+	
+	// Finnaly
+	public static void study005() {
+		int number1 = 5;
+		int number2 = 0;
+		
+		/*
+		// Case 01 Thẻ ATM bị nhốt trong máy ATM
+		System.out.println("Nhận thẻ ATM");
+		System.out.println(number1/number2);
+		System.out.println("Trả thẻ ATM");
+		*/
+		
+		// Case 02 Thẻ ATM được nhả ra khi có lỗi giao dịch (catch)
+		/*
+		System.out.println("Nhận thẻ ATM");
+		try {
+			System.out.println(number1/number2);
+		} catch (Exception e){
+			System.out.println("Error: " + e.getMessage());
+		} 
+		System.out.println("Trả thẻ ATM");
+		*/
+		
+		// Case 03 Thẻ ATM được nhả ra khi có lỗi giao dịch (finally)
+		System.out.println("Nhận thẻ ATM");
+		try {
+			System.out.println(number1/number2);
+		} finally {
+			System.out.println("Trả thẻ ATM");
+		}
 	}
 	
 	// Exception: Runtime + Checked

@@ -107,4 +107,5 @@ Tìm hiểu Exception và phát sinh Exception
 Sử dụng Try catch finally
     Try catch
     Runtime & Checked
+    Finally
     
