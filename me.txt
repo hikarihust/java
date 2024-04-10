@@ -108,4 +108,6 @@ Sử dụng Try catch finally
     Try catch
     Runtime & Checked
     Finally
+Từ khóa throws và throw
+    Throws và throw
     

@@ -5,7 +5,22 @@ import java.io.FileOutputStream;
 
 public class Main {
 	public static void main(String[] args) {
-		study005();
+		try {
+			myFunction(2,0);
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	// Throws throw
+	public static void myFunction(int number1, int number2) throws ArithmeticException, Exception{
+		if(number2 == 0) throw new ArithmeticException("Lỗi chia cho 0");
+		if(number2%2 == 0) throw new ArithmeticException("Lỗi chia cho số chẵn");
+		System.out.println(number1/number2);
 	}
 	
 	// Finnaly
