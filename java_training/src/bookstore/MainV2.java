@@ -2,7 +2,7 @@ package bookstore;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainV2 {
 	private static Store storeObj	= new Store();
 	
 	public static void main(String[] args) {
@@ -12,26 +12,19 @@ public class Main {
 		
 		do {
 			showMenu();
+			functionID		= sc.nextInt();
+			sc.nextLine();
 			
-			try {
-				functionID		= sc.nextInt();
-				sc.nextLine();
-				
-				switch (functionID) {
-					case 1: addBook(); 		break;
-					case 2: editBook(); 	break;
-					case 3: deleteBook(); 	break;
-					case 4: findBook(); 	break;
-					case 5: listBook(); 	break;
-					case 6: 
-					default:
-						flag = false;
-						break;
-				}
-			} catch (Exception e) {
-				myPrint("Error! Please try again!");
-				flag	= true;
-				sc.nextLine();
+			switch (functionID) {
+				case 1: addBook(); 		break;
+				case 2: editBook(); 	break;
+				case 3: deleteBook(); 	break;
+				case 4: findBook(); 	break;
+				case 5: listBook(); 	break;
+				case 6: 
+				default:
+					flag = false;
+					break;
 			}
 		} while (flag == true);
 		
