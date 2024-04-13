@@ -112,3 +112,7 @@ Từ khóa throws và throw
     Throws và throw
 Xây dựng ứng dụng BookStore
     
+======================================= Thao tác và xử lý chuỗi =======================================
+
+Kiểu dữ liệu String
+    
