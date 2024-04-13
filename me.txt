@@ -115,4 +115,5 @@ Xây dựng ứng dụng BookStore
 ======================================= Thao tác và xử lý chuỗi =======================================
 
 Kiểu dữ liệu String
+Sử dụng class StringBuilder
     
