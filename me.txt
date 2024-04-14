@@ -119,4 +119,5 @@ Sử dụng class StringBuilder
 Kỹ thuật xử lý chuỗi
 Regular Expression
     Regular Expression
+    Check ID
     
